@@ -32,7 +32,21 @@
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.5.png)
 
 
-
+  · Habilitamos la regla TightVNC en el firewall de la máquina SLAVE
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.7.png)
+ 
+  · En la máquina Master entramos en el TightVNC Viewer y escribimos la ip del Slave y el puerto.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.8.png)
+ 
+  · Escribimos la contraseña
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.9.png)
+ 
+  · Ya estaríamos conectador por VNC
+  
+ ![image]()
 
 
 
