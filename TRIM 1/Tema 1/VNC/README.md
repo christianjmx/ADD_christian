@@ -5,11 +5,11 @@
 
 ## Máquina Slave ##
 
-· Descargamos el tightVNC
+· Descargamos el tightVNC.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.png)
 
-· Instalamos el tightVNC 
+· Instalamos el tightVNC .
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.1.png)
 
@@ -27,12 +27,12 @@
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.4.png)
 
 
-  · Configuramos el TightVNC server
+  · Configuramos el TightVNC server.
   
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.5.png)
 
 
-  · Habilitamos la regla TightVNC en el firewall de la máquina SLAVE
+  · Habilitamos la regla TightVNC en el firewall de la máquina SLAVE.
   
  ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.7.png)
  
@@ -40,17 +40,74 @@
   
  ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.8.png)
  
-  · Escribimos la contraseña
+  · Escribimos la contraseña.
   
  ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/1.9.png)
  
-  · Ya estaríamos conectador por VNC
+  · Ya estaríamos conectador por VNC.
   
- ![image]()
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Windows/2.0.png)
+ 
+ 
+ 
+ # VNC Linux #
+ ## Desde la máquina Slave Opensuse ##
+ 
+ · Configuramos una dirección estática (En mi caso tuve que dejarlas en dinamicas ya que realicé la tarea desde mi casa)
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.1.png)
+ 
+ · Configuramos VNC desde yast.
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.2.png)
+ 
+ · Permitimos la administración remota.
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.3.png)
+ 
+ · Ejecutamos VNCServer por comando.
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.4.png)
+ 
+ · Comprobamos los servicios en ejecución.
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.5.png)
+
+  · Comprobamos que están los servicios en los puertos correctos.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.6.png)
 
 
+### Desde una máquina GNU/Linux ###
+
+  · Comprobamos si son visibles los servicios desde fuera.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.7.png)
+ 
+## Desde la máquina Master Opensuse ##
+
+  · Nos conectamos por comando a la maquina Slave poniendo la IP y contraseña.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.8.png)
+ 
+  · Conexión correcta
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/1.9.png)
+ 
+ ## Comprobaciones finales ##
+ 
+  · Desde La máquina master ejecutamos el siguiente comando para ver las conexiones.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/2.0.png)
+ 
+  · Ejecutamos el siguiente comando en el servidor.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/2.1.png)
 
 
+# SSOO Cruzados #
+
+· Conectar el cliente GNU/Linux con el Servidor VNC Windows.
 
 
 
