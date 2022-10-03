@@ -109,6 +109,39 @@
 
 · Conectar el cliente GNU/Linux con el Servidor VNC Windows.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/4.1.png)
+
+· Comprobaación de conexión.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/4.2.png)
+
+· Comprobación de direcciones remotas desde windows.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/4.3.png)
+
+
+# 6. DISPLAY 0 en GNU/Linux #
+
+  · Ir al servidor y ejecutar el siguiente comando.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.1.png)
+ 
+  · Desde el cliente comprobar los puertos del servidor.
+ 
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.2.png)
+ 
+  · Conectarnos con el servidor.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.3.png)
+ 
+  · Conectado correctamente.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.4.png)
+ 
+  · Comprombación de conexión.
+  
+ ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.5.png)
+
 
 
 
