@@ -138,7 +138,7 @@
   
  ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.4.png)
  
-  · Comprombación de conexión.
+  · Comprobación de conexión.
   
  ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/VNC/IMG/VNC%20Opensuse/5.5.png)
 
