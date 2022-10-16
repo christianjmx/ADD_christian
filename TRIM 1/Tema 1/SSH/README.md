@@ -2,7 +2,7 @@
 
 ## 1.1 Servidor SSH ##
 
-- Creamos los 4 usuarios que se pidden.
+- Creamos los 4 usuarios que se piden.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%201/SSH/capturas/1.1/1.png)
 
