@@ -175,6 +175,45 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/parte%20de%20grafico/86.png)
 
+## 3.2 Cliente GNU/Linux comandos ##
+
+- Probar el comando que muestra los recursos del servidor samba.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/37.png)
+
+- Creamos la siguiente carpeta en local.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/38.png)
+
+- Con el siguiente comando montamos el recurso compartido.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/39.png)
+
+- Comprobamos que el recurso fue montado.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/40.png)
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/41.png)
+
+## 3.3 Montaje automático ##
+
+- Reiniciamos la MV y vemos que ha desaparecido el recurso que montamos antes, ya que era temporal.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/42.png)
+
+- Creamos una copia de seguridad del archivo de configuración fstab.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/43.png)
+
+- Editamos el fichero fstab de la siguiente manera.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/44.png)
+
+- Reiniciamos y se nos debe montar automáticamente el recurso.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/45.png)
+
+
 
 
 
