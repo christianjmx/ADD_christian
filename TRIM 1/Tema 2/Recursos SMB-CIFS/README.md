@@ -30,7 +30,7 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/6.png)
 
-(visualizamos si se cambiaron el grupo y el usuario propietario)
+(visualizamos si se cambiaron el grupo y el usuario propietario).
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/7.png)
 
@@ -46,7 +46,7 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/10.png)
 
-- Vamos al yast ---> Samba Server
+- Vamos al yast ---> Samba Server.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/11.png)
 
@@ -71,7 +71,7 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/16.png)
 
-- Comprobamos la lista de Usuarios Samba
+- Comprobamos la lista de Usuarios Samba.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/17.png)
 
@@ -105,7 +105,7 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/23.png)
 
-- Borramos las conexiones SMB/CIFS
+- Borramos las conexiones SMB/CIFS.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/24.png)
 
@@ -150,7 +150,7 @@
 
 ## 3 Cliente GNU/Linux ##
 
-- Configuramos el archivo /etc/hosts
+- Configuramos el archivo /etc/hosts.
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/36.png)
 
@@ -213,9 +213,23 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%202/Recursos%20SMB-CIFS/IMG/Samba/45.png)
 
+## 4. Preguntas para resolver ##
 
+- ¿Por qué tenemos dos servicios (smb y nmb) para Samba?.
 
+Porque un servicio responde las peticiones de servicio de nombres NetBIOS (nmb) y el otro suministra servicios para compartir archivos e impresión a clientes Windows(smb).
 
+- ¿Las claves de los usuarios en GNU/Linux deben ser las mismas que las que usa Samba?.
+
+No, no hacen falta que se correspondan las contraseñas.
+
+- ¿Puedo definir un usuario en Samba llamado soldado3, y que no exista como usuario del sistema?.
+
+No, el usuario debe existir en el sistema.
+
+- ¿Cómo podemos hacer que los usuarios soldado1 y soldado2 no puedan acceder al sistema pero sí al samba?.
+
+Cambiando el shell de esos usuarios.
 
 
 
