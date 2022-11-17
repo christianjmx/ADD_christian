@@ -59,67 +59,42 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/16.png)
 
+## 4. Imprimir de forma remota ##
 
+- En la web modificamos la impresora para habilitar como recurso compartido.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/17.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/18.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/19.png)
 
+- Ahora en el cliente añadimos el ipp y ipp-client en el firewall.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/20.png)
 
+- Compruebo que puedo acceder a la página de cups desde el cliente.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/21.png)
 
+- Ahora desde la herramienta configuración de impresión, añadimos la impresora de red.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/22.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/23.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/24.png)
 
+- Creamos el archivo que vamos a imprimir desde el cliente.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/25.png)
 
+- Procedemos a imprimir y comprobar desde el servidor si se imprimió remotamente.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/26.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/27.png)
 
+- Esto es el contenido mas legible al visualizarlo.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%201/Tema%203/Servidor%20Impresion%20Linux/IMG/28.png)
