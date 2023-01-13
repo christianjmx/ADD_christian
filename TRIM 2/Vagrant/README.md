@@ -128,32 +128,124 @@
 
 ![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/24.png)
 
+### 3.3 Comprobamos ###
+
+· vagrant up, para crear la MV.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/25.png)
+
+· Para verificar que efectivamente el servidor Apache ha sido instalado e iniciado, abrimos navegador en la máquina real con URL http://127.0.0.1:42XX.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/26.png)
+
+## 4. Proyecto: Suministro mediante Puppet ##
+
+### 4.1 Preparativos ###
+
+· Crear directorio nombre-alumnoXX-va4puppet.d como nuevo proyecto Vagrant.
+· Modificar el archivo Vagrantfile de la siguiente forma:
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/27.png)
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/28.png)
+
+· Crear la carpeta manifests. 
+· Crear el fichero manifests/nombre-del-alumnoXX.pp, con las órdenes/instrucciones Puppet necesarias para instalar el software que elijamos. Ejemplo:
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/29.png)
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/30.png)
 
 
+"Punto 4.2 ya etá hecho"
 
 
+### 4.3 Comprobamos ###
 
+· Ir a la MV:
+  · Comprobar que el software está instalado.
+  
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/31.png)
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/32.png)
 
+## 5. Proyecto: Caja personalizada ##
 
+### 5.1 Preparar la MV VirtualBox ###
 
+· Ir a la MV de VirtualBox.
+· Poner clave "vagrant" al usuario root.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/34.png)
 
+· Configuramos acceso por clave pública al usuario vagrant:
+  · mkdir -pm 700 /home/vagrant/.ssh, creamos la carpeta de configuración SSH.
+  · wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys, descargamos la clave pública.
+  · chmod 0600 /home/vagrant/.ssh/authorized_keys, modificamos los permisos de la carpeta.
+  · chown -R vagrant /home/vagrant/.ssh, modificamos el propietario de la carpeta.
+  
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/35.png)
 
+### Sudoers ###
 
+· Añadir vagrant ALL=(ALL) NOPASSWD: ALL al fichero de configuración /etc/sudoers
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/36.png)
 
+### 5.2 Crear caja Vagrant ###
 
+· Vamos a crear una nueva carpeta nombre-alumnoXX-va5custom.d
+· VBoxManage list vms, comando de VirtualBox que muestra los nombres de nuestras MVs. 
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/37.png)
 
+· vagrant package --base VMNAME --output nombre-alumnoXX.box, parar crear nuestra propia caja.
+· Comprobamos que se ha creado el fichero nombre-alumnoXX.box
+· vagrant box add nombre-alumno/va5custom nombre-alumnoXX.box, añadimos la nueva caja creada por nosotros, al repositorio local de cajas vagrant de nuestra máquina.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/38.png)
 
+· Consultar ahora la lista de cajas Vagrant disponibles.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/39.png)
 
+### 5.3 Vagrantfile ###
 
+· Crear un nuevo fichero Vagrantfile para usar nuestra caja.
+· Incluir en el fichero Vagrantfile las configuraciones necesarias para:
+  · La MV de VirtualBox debe tener el nombre vagrantXX-nombre-alumno.
+  · La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/40.png)
 
+### 5.4 Usar la nueva caja ###
 
+· Levantamos una nueva MV a partir del Vagranfile.
 
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/41.png)
 
+· Nos debemos conectar sin problemas (vagant ssh).
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/42.png)
+
+## 6. Caja Windows ##
+
+### 6.1 Windows con vagrant ###
+
+· Crear una MV Windows usando vagrant.
+· Comprobar que funciona.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/43.png)
+
+· Archivo vagrantfile
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/44.png)
+
+· Instalamos el plugin winrm
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/46.png)
+
+· Levantamos la máquina.
+
+![image](https://github.com/christianjmx/ADD_christian/blob/main/TRIM%202/Vagrant/IMG/45.png)
 
